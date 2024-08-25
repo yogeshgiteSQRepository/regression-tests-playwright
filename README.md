@@ -1,79 +1,45 @@
-```markdown
-# Regression Tests - Playwright
+# 📚 regression-tests-playwright
 
-A robust test automation framework based on **C#**, **Playwright**, and **SpecFlow** designed for regression testing of web applications. This framework supports behavior-driven development (BDD) using SpecFlow and enables efficient test automation for modern web applications.
+🎭 **Playwright | C# | Specflow**
 
-## 📋 Table of Contents
+## ⚙️ Pre-requisites
 
-- [Pre-requisites](#pre-requisites)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Running Tests](#running-tests)
-- [Test Execution Demo](#test-execution-demo)
-- [Contributing](#contributing)
-- [Contact](#contact)
+Install the following programs on top of VS2022:
 
-## 🛠 Pre-requisites
+- 🖥️ **C#**
+- 🛠️ **.Net 6**
+- 🎭 **Playwright**
+- 🧪 **NUnit**
+- 📄 **Specflow**
 
-Before you begin, ensure you have the following installed:
+## 🚀 How to run tests
 
-- **Visual Studio 2022** (with C# development workload)
-- **.NET 6 SDK**
-- **Playwright** for .NET
-- **NUnit** test framework
-- **SpecFlow** for BDD
+1. Clone the repository 📂
+2. In the root folder, run the command: **dotnet test** 🏃
 
-Ensure that the Playwright CLI is installed globally:
+## 📁 Folder Structure
 
-```bash
-dotnet tool install --global Microsoft.Playwright.CLI
-```
+- `🗂️ Features`: Contains the feature files that describe the test cases in Gherkin language.
+- `🗂️ StepDefinitions`: Houses the step definition files where the test steps are implemented.
+- `🗂️ Pages`: Includes page object classes representing different pages of the application.
+- `🗂️ Hooks`: Contains the setup and teardown methods that run before and after test execution.
+- `🗂️ Drivers`: Holds the WebDriver configurations for Playwright.
+- `🗂️ Utilities`: Includes utility classes for common functions and configurations.
 
-## 📦 Installation
+## 🆕 How to add new tests
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/yogeshgiteSQRepository/regression-tests-playwright.git
-    cd regression-tests-playwright
-    ```
+1. Create a new `.feature` file under the `Features` directory.
+2. Implement the steps in the corresponding step definition file in the `StepDefinitions` directory.
+3. Create or update the page objects in the `Pages` directory as needed.
 
-2. **Install dependencies**:
-    All necessary dependencies will be restored when building the project:
-    ```bash
-    dotnet build
-    ```
+## 📊 Reporting
 
-## 🗂 Project Structure
+Test results are generated in the default Playwright format. You can also integrate with third-party reporting tools for enhanced reporting.
 
-The project follows a clean, modular structure that makes it easy to scale and maintain.
+## 🔄 CI/CD Integration
 
-- **Features**: Contains `.feature` files written in Gherkin language for BDD.
-- **StepDefinitions**: Contains C# classes where Gherkin steps are defined.
-- **Pages**: Implements the Page Object Model (POM) pattern.
-- **Hooks**: Contains setup and teardown hooks for SpecFlow.
+This framework can be integrated with CI/CD pipelines using tools like Jenkins, GitHub Actions, or Azure DevOps. Update the pipeline configuration to run the tests using the `dotnet test` command.
 
-## 🚀 Running Tests
+## 🎥 Test Execution Demo
 
-To execute the tests, navigate to the root of the project and run the following command:
-
-```bash
-dotnet test
-```
-
-## 📊 Test Execution Demo
-
-Watch a demo of the test execution:
-
-[![Watch the demo](https://img.youtube.com/vi/your-video-id/hqdefault.jpg)](https://drive.google.com/file/d/1opgj3ZlRk4QeInmWCFxpwioWXeefTEoY/view?usp=sharing)
-
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md) and ensure that all code changes include appropriate tests.
-
-## 📞 Contact
-
-For any inquiries, feel free to reach out:
-
-- **Author**: [Yogesh Gite](https://github.com/yogeshgiteSQRepository)
-- **Email**: yogeshgite333@gmail.com
+[📥 Download or Watch Video](https://drive.google.com/file/d/1opgj3ZlRk4QeInmWCFxpwioWXeefTEoY/view?usp=sharing)
